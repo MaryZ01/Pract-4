@@ -13,8 +13,23 @@ namespace Car
         protected int year;
         protected int price;
         protected string owner;
-        public Auto();
-        public Auto(string mr, string md, int y, int pr, string ow);
+        public Auto()
+        {
+            this.mark = "Lexus";
+            this.model = "LS";
+            this.year = 0;
+            this.price = 25000;
+            this.owner = "Bogdan";
+        }
+        public Auto(string mr, string md, int y, int pr, string ow)
+        {
+            this.mark = mr;
+            this.model = md;
+            this.year = y > 0 ? y : 1;
+            this.price = pr > 0 ? pr : 25000;
+            this.owner = ow;
+        }
+
         public double Price()
         {
             return price * Math.Pow(0.9, year);
