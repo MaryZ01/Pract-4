@@ -1,0 +1,21 @@
+?using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Car
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("<<<Auto>>>");
+            Auto A = new Auto();
+            Auto B = new Auto("Audi", "A6", 5, 9500, "Igor");
+            Console.WriteLine(A);
+            Console.WriteLine(B);
+            Console.ReadKey();
+        }
+    }
+}
