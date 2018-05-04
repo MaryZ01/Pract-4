@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Car
 {
-    class Auto: IComparable, IFormattable
+    class Auto: IComparable
     {
         protected string mark;
         protected string model;
@@ -16,7 +16,6 @@ namespace Car
         public Auto();
         public Auto(string mr, string md, int y, int pr, string ow);
         public double Price();
-        public virtual string ToString(string format, IFormatProvider formatProvider);
         public override string ToString();
         public int CompareTo(object obj);
     }
