@@ -15,7 +15,10 @@ namespace Car
         protected string owner;
         public Auto();
         public Auto(string mr, string md, int y, int pr, string ow);
-        public double Price();
+        public double Price()
+        {
+            return price * Math.Pow(0.9, year);
+        }
         public override string ToString();
         public int CompareTo(object obj);
     }
